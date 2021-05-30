@@ -9,7 +9,7 @@ from tensorflow.python.keras.applications.mobilenet_v2 import preprocess_input
 from source.utils import load_cascade_detector, preprocess_face_frame, decode_prediction, write_bb
 
 POSSIBLE_EXT = [".png", ".jpg", ".jpeg"]
-model = keras.models.load_model('models/mask_mobilenet.h5')
+model = keras.models.load_model('models/mask_detector.model')
 face_detector_model = load_cascade_detector()
 
 
